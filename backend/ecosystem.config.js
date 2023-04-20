@@ -20,7 +20,7 @@ module.exports = {
       repo: 'git@github.com:AleksandrDronov/web-plus-pm2-deploy.git',
       path: DEPLOY_PATH,
       'pre-deploy-local': `scp .env ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}source/backend && scp .env.deploy ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}source/backend`,
-      'post-deploy': 'cd backend && npm install && npm run build',
+      'post-deploy': 'cd backend && npm i && npm run build',
     },
   },
 };
