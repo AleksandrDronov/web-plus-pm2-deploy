@@ -2,15 +2,15 @@ require('dotenv').config();
 
 module.exports = {
   apps: [{
-    name: 'api-service',
-    script: './dist/app.js',
+    name: 'frontend',
+    script: './build/index.hnml',
   }],
 
   // Настройка деплоя
   deploy: {
     production: {
-      repo: 'https://github.com/AleksandrDronov/web-plus-pm2-deploy',
-      'post-deploy': 'npm i && npm run build',
+      repo: 'git@github.com:AleksandrDronov/web-plus-pm2-deploy.git',
+      'post-deploy': 'cd /home/dronov/web-plus-pm2-deploy/source/frontend && npm i && npm run build && npx pm2 restart ecosystem.config.js',
     },
   },
 };
