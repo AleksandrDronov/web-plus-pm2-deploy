@@ -19,7 +19,7 @@ module.exports = {
       ref: DEPLOY_REF,
       repo: 'git@github.com:AleksandrDronov/web-plus-pm2-deploy.git',
       path: DEPLOY_PATH,
-      'post-deploy': `cd ${DEPLOY_PATH}source/frontend && npm i && npm run build && npx pm2 restart ecosystem.config.js`,
+      'post-deploy': `cd ${DEPLOY_PATH}source/frontend && npm i && npm run build`,
     },
   },
 };
