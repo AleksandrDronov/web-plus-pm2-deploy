@@ -1,3 +1,6 @@
 # Деплой приложения на сервер с использованием pm2
 
-Стартеркит проекта по автоматизации деплоя фронтенда и бэкенда при помощи pm2 (pm2 deploy)
+- IP адрес 158.160.17.142
+- Frontend [https://mesto-project.nomoredomains.monster/ ](https://mesto-project.nomoredomains.monster/ )
+- Backend [https://api.mesto-project.nomoredomains.monster/ ](https://api.mesto-project.nomoredomains.monster/ )
+
