@@ -139,6 +139,6 @@ class Api {
   }
   }
   // Замените на адрес вашего бэкенда
-  const api = new Api('http://api.mesto-project.nomoredomains.monster');
+  const api = new Api('https://api.mesto-project.nomoredomains.monster');
 
   export default api;
